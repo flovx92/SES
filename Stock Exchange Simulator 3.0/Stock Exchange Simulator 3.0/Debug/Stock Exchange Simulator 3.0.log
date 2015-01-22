@@ -1,0 +1,28 @@
+﻿La génération a démarré 19/01/2015 16:55:57.
+     1>Projet "\\paradis\eleves\FVASSAUX\Bureau\Stock Exchange Simulator 3.0\Stock Exchange Simulator 3.0\Stock Exchange Simulator 3.0.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\paradis\eleves\FVASSAUX\Bureau\Stock Exchange Simulator 3.0\Debug\Stock Exchange Simulator 3.0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\paradis\eleves\FVASSAUX\Bureau\Stock Exchange Simulator 3.0\Debug\Stock Exchange Simulator 3.0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\paradis\eleves\FVASSAUX\Bureau\Stock Exchange Simulator 3.0\Debug\Stock Exchange Simulator 3.0.lib" /MACHINE:X86 Debug\Agent.obj
+         Debug\Bank.obj
+         Debug\Bond.obj
+         Debug\Company.obj
+         Debug\Database.obj
+         Debug\Dept_Treasury.obj
+         Debug\General.obj
+         Debug\main.obj
+         Debug\Option.obj
+         Debug\Order.obj
+         Debug\Portfolio.obj
+         Debug\RandomAgent.obj
+         Debug\Stock.obj
+         Debug\StockExchange.obj
+         Debug\StockExchangeFunctions.obj
+         Debug\test.obj
+         Stock Exchange Simulator 3.0.vcxproj -> \\paradis\eleves\FVASSAUX\Bureau\Stock Exchange Simulator 3.0\Debug\Stock Exchange Simulator 3.0.exe
+     1>Génération du projet "\\paradis\eleves\FVASSAUX\Bureau\Stock Exchange Simulator 3.0\Stock Exchange Simulator 3.0\Stock Exchange Simulator 3.0.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:04.32
