@@ -1,0 +1,48 @@
+#include "RandomAgent.h"
+#include "Stock.h"
+#include "Portfolio.h"
+#include "Agent.h"
+#include <QGlobal.h>
+#include <QTime>
+#include "Option.h"
+#include "General.h"
+
+RandomAgent::RandomAgent(int id, double cash, vector<double> stock_prices, double margin):Agent(id, cash, stock_prices)
+{
+    _margin = margin;
+}
+
+void RandomAgent::Do(int time, vector<Stock> stocks, vector<Option*> options, Treasure* tres,vector<Company*> companies ,vector<Stat*> stats)
+{
+    QTime qtime = QTime::currentTime();
+    qsrand((uint)qtime.msec() + _id);//so that every agent work with a different seed
+
+    EraseUsedOrders();
+    EraseOldOrders(time,10);//in order to avoid a full memory problem
+
+    cout << "je suis un agent random ! " << _id << "\n";
+	int n = _portfolio.size();
+    int id_stock = qrand()%n;
+    bool buy = (qrand()%10)>=5;
+
+    double price;
+    if (buy)
+    {
+        price = stocks[id_stock].GetBuyPrice()*(1+_margin);
+    }
+    else
+    {
+        price = stocks[id_stock].GetSellPrice()*(1-_margin);
+    }
+    MakeAnOrder(time, id_stock, buy, 10, convert_price(price));
+    //cout << "Order: " << stock << " and " << buy << "\n";
+
+
+
+}
+
+
+
+RandomAgent::~RandomAgent(void)
+{
+}
